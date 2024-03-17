@@ -9,3 +9,7 @@
 ## Even game example
 
 [![asciicast](https://asciinema.org/a/647328.svg)](https://asciinema.org/a/647328)
+
+## Calc game example
+
+[![asciicast](https://asciinema.org/a/647386.svg)](https://asciinema.org/a/647386)
