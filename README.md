@@ -6,5 +6,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/e48d823f463d4f3051a4/maintainability)](https://codeclimate.com/github/stardustvoid/php-project-45/maintainability)
 
-Even game example
+## Even game example
+
 [![asciicast](https://asciinema.org/a/647328.svg)](https://asciinema.org/a/647328)
