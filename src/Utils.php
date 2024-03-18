@@ -30,3 +30,16 @@ function calculate(int $numOne, int $numTwo, string $operator): int
             return $numOne * $numTwo;
     }
 }
+
+function findGcd(int $numOne, int $numTwo): int
+{
+    $remainder = $numOne % $numTwo;
+
+    while ($remainder > 0) {
+        $numOne = $numTwo;
+        $numTwo = $remainder;
+        $remainder = $numOne % $numTwo;
+    }
+
+    return $numTwo;
+}

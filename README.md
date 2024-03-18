@@ -13,3 +13,7 @@
 ## Calc game example
 
 [![asciicast](https://asciinema.org/a/647386.svg)](https://asciinema.org/a/647386)
+
+## GCD Game example
+
+[![asciicast](https://asciinema.org/a/647539.svg)](https://asciinema.org/a/647539)
