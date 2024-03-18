@@ -2,7 +2,6 @@
 
 namespace BrainGames\Games\Calc;
 
-use function BrainGames\Utils\boolToText;
 use function BrainGames\Utils\getRandOperator;
 use function BrainGames\Utils\calculate;
 use function BrainGames\Engine\startBrainGame;

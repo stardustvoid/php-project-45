@@ -7,7 +7,7 @@ function isEven(int $num): bool
     return $num % 2 === 0;
 }
 
-function boolToText(bool $value): string
+function convertBoolToText(bool $value): string
 {
     return $value ? 'yes' : 'no';
 }
