@@ -61,3 +61,16 @@ function hideElementInArray(array $arr, int $index, string $replacement): string
 
     return implode(' ', $arr);
 }
+
+function isPrime(int $num): bool
+{
+    $numSqrt = sqrt($num);
+
+    for ($i = 2; $i <= $numSqrt; $i++) {
+        if ($num % $i === 0) {
+            return false;
+        }
+    }
+
+    return $num > 1;
+}
