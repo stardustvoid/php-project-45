@@ -43,3 +43,21 @@ function findGcd(int $numOne, int $numTwo): int
 
     return $numTwo;
 }
+
+function generateProgression(int $start, int $difference, int $count = 10): array
+{
+    $progression = [];
+
+    for ($i = $start; count($progression) < $count; $i += $difference) {
+        $progression[] = $i;
+    }
+
+    return $progression;
+}
+
+function hideElementInArray(array $arr, int $index, string $replacement): string
+{
+    $arr[$index] = $replacement;
+
+    return implode(' ', $arr);
+}
