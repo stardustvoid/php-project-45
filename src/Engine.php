@@ -14,22 +14,20 @@ function startBrainGame($rules, $data)
 
     $score = 0;
 
-    for ($i = 0; $i < count($data); $i++) {
-        [$question, $correctAnswer] = $data[$i];
+    foreach ($data as [$question, $correctAnswer]) {
         line('Question: %s', $question);
         $answer = prompt('Your answer');
 
         if ($answer === $correctAnswer) {
             line('Correct!');
             $score += 1;
+            if ($score === count($data)) {
+                line("Congratulations, %s!", $name);
+            }
         } else {
             line('"%s" is wrong answer ;(. Correct answer was "%s".', $answer, $correctAnswer);
             line("Let's try again, %s!", $name);
             break;
         }
-    }
-
-    if ($score === 3) {
-        line("Congratulations, %s!", $name);
     }
 }
