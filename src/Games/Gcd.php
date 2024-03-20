@@ -11,8 +11,8 @@ function startGameGcd()
     $data = [];
 
     for ($i = 0; $i <= 2; $i++) {
-        $numOne = rand(0, 50);
-        $numTwo = rand(0, 50);
+        $numOne = rand(2, 100);
+        $numTwo = rand(2, 100);
         $question = "{$numOne} {$numTwo}";
         $correctAnswer = (string) findGcd($numOne, $numTwo);
 
