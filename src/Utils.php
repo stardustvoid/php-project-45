@@ -21,14 +21,12 @@ function getRandOperator(): string
 
 function calculate(int $numOne, int $numTwo, string $operator): int
 {
-    switch ($operator) {
-        case '+':
-            return $numOne + $numTwo;
-        case '-':
-            return $numOne - $numTwo;
-        case '*':
-            return $numOne * $numTwo;
+    if ($operator === '+') {
+        return $numOne + $numTwo;
+    } elseif ($operator === '-') {
+        return $numOne - $numTwo;
     }
+    return $numOne * $numTwo;
 }
 
 function findGcd(int $numOne, int $numTwo): int
